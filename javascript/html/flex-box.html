@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/flex-box.css">
+    <script src="../javascript/javascipt.js"></script>
+</head>
+<body onload="showTimer()">
+    <header class="flex-container">
+        <div class="flex-item1">
+            <a href="#">HOME</a>
+        </div>
+        <div class="flex-item2">
+            <a href="#">REGISTER</a>
+        </div>
+        <div class="flex-item3">
+            <a href="#">LOGIN</a>
+        </div>
+        <div class="flex-item3">
+            <a href="#">LOGOUT</a>
+        </div>
+        <div id="timerDiv">
+
+        </div>
+    </header>
+
+    <section>
+
+        <div class="form">
+
+            <div class="heading">
+                <h1>REGISTER HERE</h1>
+            </div>
+
+            <form action="form.php" method="POST" onsubmit=" return Validation() ">
+
+                <label>First Name : </label>
+                <br>
+                <input type="text" name="fname" id="fname" placeholder="Enter Your First Name" class="name">
+                <br><br>
+                <label>Last Name :</label>
+                <br>
+                <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name" class="name">
+                <br><br>
+                <label>Your Age : </label>
+                <br>
+                <input type="number" name="age" id="age" placeholder="How Old Are You ?" class="name">
+                <br><br>
+                <label>Gender : </label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male">Male</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="female">
+                &nbsp;
+                <span id="female">Female</span>
+                <br><br>
+                <label>Known Language : </label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="lan" id="hindi">
+                &nbsp;
+                <span id="hindi">Hindi</span>
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="lan" id="eng">
+                &nbsp;
+                <span id="english">English</span>
+                <br><br>
+                <input type="submit" value="Submit" name="submit" id="submit">
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="p">
+            <p>content here is not due to copyright infrigment</p>
+        </div>
+    </footer>
+
+</body>
+</html>
