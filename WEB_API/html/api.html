@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/api.css">
+    <!-- <script src="../javascript/api.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+
+</header>
+
+<main>
+
+    <div class="api">
+
+        <div class="image">
+        
+            <img src="../images/MANAGER.JPG" class="image" width="215" height="200">
+
+        </div>
+
+        <input type="text" id="api" placeholder="enter something"><br><br>
+
+        <button>Search</button>
+
+    </div>
+
+</main>
+
+<footer>
+
+</footer>
+<script>
+$(document).ready(function(){
+
+    $('button').click(function(){
+    
+    const name =$('#api').val();
+    alert(name);
+    
+    $('.image').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+
+    });
+    
+    });
+</script>
+</body>
+</html>
