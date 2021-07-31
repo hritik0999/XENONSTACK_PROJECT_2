@@ -12,6 +12,22 @@
 <body>
 <header>
 
+    <div class="item1">
+        <a href="#" id="ahref">HOME</a>
+    </div>
+
+    <div class="item2">
+        <a href="#" id="ahref">ABOUT</a>
+    </div>
+
+    <div class="item3">
+        <a href="#" id="ahref">CONTACT</a>
+    </div>
+
+    <div class="item4">
+        <a href="#" id="ahref">REGISTER</a>
+    </div>
+
 </header>
 
 <main>
@@ -34,6 +50,12 @@
 
 <footer>
 
+    <div class="para">
+
+        <p>content here is not due to copyright&copy;</p>
+
+    </div>
+
 </footer>
 <script>
 $(document).ready(function(){
@@ -41,7 +63,7 @@ $(document).ready(function(){
     $('button').click(function(){
     
     const name =$('#api').val();
-    alert(name);
+    // alert(name);
     
     $('.image').attr('src',`https://joeschmoe.io/api/v1/${name}`);
 
