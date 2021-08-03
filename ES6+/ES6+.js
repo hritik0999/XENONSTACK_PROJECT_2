@@ -126,17 +126,140 @@
 
 
 
-                                                //default parameter
+//                                                 //default parameter
 
 
-function isEqualTo(number,compare = 0)
-{
+// function isEqualTo(number,compare = 0)
+// {
 
-    return number == compare;
+//     return number == compare;
 
-}                            
+// }                            
 
-console.log(isEqualTo(10));
+// console.log(isEqualTo(10));
 
 
-                                                //object literal extentions
+//                                                 //object literal extentions
+
+
+// yname = "hritik";
+// yage = 21;
+
+// let obj = {
+
+// yname,
+// yage,
+
+// "greet"()
+// {
+
+//     console.log(this.yname + " "+this.yage);
+
+// }
+
+// };       
+
+// obj["greet"]();
+
+
+
+//                                             //the rest operator
+
+
+
+// function sumUp(...add)
+// {
+
+//     console.log(add);
+//     let result = 0;
+
+//     for(let i = 0 ; i < add.length ; i++)
+//     {
+
+//         result = result+add[i];
+
+//     }
+//     return result;
+// }                                            
+
+// console.log(sumUp(100 , 10 , 20));
+
+
+
+                                                //the spread operator
+
+
+// let mynumbers = [1,2,3,4,5];
+
+// console.log(...mynumbers);
+
+// console.log(Math.max(...mynumbers));
+
+
+                                                //the for of loop
+
+// let testResults = [1,1.5,1.9];
+
+// for(testResult of testResults)
+// {
+
+//     console.log(testResult);
+
+// }
+
+                                                // template litereals
+
+
+
+// let yourName ="hritik";
+
+// let description = `
+
+// my name is ${yourName}
+
+// `;
+
+// console.log(description);
+
+
+                                                //destructuring arrays
+
+
+// let numbers = [1,2,3];
+
+// let [a,b] = numbers;
+
+// console.log(a);
+
+// console.log(b);
+
+
+// // swap
+
+// [b,a] = [a,b];
+
+// console.log(a);
+// console.log(b);
+
+// //can also do like this
+
+// let [c,d] = [1,2,4];
+
+// console.log(c);
+
+// console.log(d);
+
+
+                                            //destructuring object
+
+  let obj = {
+
+    nickname : "hritik",
+    
+    age : 21
+
+  } ;                                         
+
+  let {nickname ,age: yourAge} = obj;
+
+  console.log(nickname,yourAge);
